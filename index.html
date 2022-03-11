@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="tabela">
+        <table>
+            <p id="result"></p>
+            <tr>
+                <td><button class="simbolos" id="mais" onclick="insert('+')">+</button></td>
+                <td><button class="simbolos" id="menos" onclick="insert('-')">-</button></td>
+                <td><button class="simbolos" id="mult" onclick="insert('*')">x</button></td>
+                <td><button class="simbolos" id="divi" onclick="insert('/')">÷</button></td>
+            </tr>
+            <tr>
+                <td><button class="numeros" id="sete" onclick="insert('7')">7</button></td>
+                <td><button class="numeros" id="oito" onclick="insert('8')">8</button></td>
+                <td><button class="numeros" id="nove" onclick="insert('9')">9</button></td>
+                <td rowspan="4"><button class="numeros" id="igual" onclick="igual()">=</button></td>
+            </tr>
+            <tr>
+                <td><button id="quatro" class="numeros" onclick="insert('4')">4</button></td>
+                <td><button class="numeros" id="cinco" onclick="insert('5')">5</button></td>
+                <td><button class="numeros" id="seis" onclick="insert('6')">6</button></td>
+            </tr>
+            <tr>
+                <td><button class="numeros" id="um" onclick="insert('1')">1</button></td>
+                <td><button class="numeros" id="dois" onclick="insert('2')">2</button></td>
+                <td><button class="numeros" id="tres" onclick="insert('3')">3</button></td>
+            </tr>
+            <tr>
+                <td><button class="numeros" id="zero" onclick="insert('0')">0</button></td>
+                <td><button id="ponto" class="numeros" onclick="insert('.')">.</button></td>
+                <td><button class="numeros" id="ce" onclick="clean()">c</button></td>
+            </tr>
+        </table>
+    </class>
+    <script src="java.js"></script>
+</body>
+</html>
